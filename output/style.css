@@ -1,0 +1,48 @@
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+.jumbotron {
+    background-color: #00aa93;
+    border-radius: 0px;
+}
+.fa-laptop-house {
+    background-color: #fdfefb;
+    padding: 15px;
+    border-radius: 15px;
+    color: #003136;
+}
+.jumbotron-text {
+    color: #f9fdf2;
+    font-size: 100px;
+    font-weight: bold;
+}
+.jumbotron-subtext {
+    color: #e4f9c1;
+    font-size: 40px;
+}
+.card {
+    margin: 10px;
+    width: 100%;
+    border-color: #003136;
+}
+.card-header {
+    background-color: #003136;
+    color: #fdfefb;
+}
+.card-fullname {
+    color: #e4f9c1;
+    font-size: 40px;
+}
+.card-body {
+    background-color: #81d5c9;
+}
+.list-group {
+    background-color: #f6fdec;
+}
+a {
+    color: #00aa93;
+}
+a:hover {
+    color: #e4f9c1;
+    text-decoration: none;
+}
