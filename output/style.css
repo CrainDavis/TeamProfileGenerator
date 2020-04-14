@@ -36,6 +36,10 @@ body {
 .card-body {
     background-color: #81d5c9;
 }
+.profile-image {
+    height: 150px;
+    width: 150px;
+}
 .list-group {
     background-color: #f6fdec;
 }
