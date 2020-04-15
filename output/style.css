@@ -20,10 +20,15 @@ body {
     color: #e4f9c1;
     font-size: 40px;
 }
+.container { /* hides the ',' that appears between two cards with the same employee role */
+    color: white;
+    font-size: 1px;
+}
 .card {
     margin: 10px;
     width: 100%;
     border-color: #003136;
+    font-size: 17px;
 }
 .card-header {
     background-color: #003136;
@@ -40,8 +45,16 @@ body {
     height: 150px;
     width: 150px;
 }
-.list-group {
-    background-color: #f6fdec;
+.list-group-item {
+    color: #003136;
+}
+.role-label {
+    background-color: #003136;
+    color: #e4f9c1;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 5px;
+    margin-right: 5px;
 }
 a {
     color: #00aa93;
