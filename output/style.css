@@ -1,6 +1,14 @@
+/*========================================================================*/
+/* ENTIRE PAGE */
+/*========================================================================*/
 body {
     font-family: 'Varela Round', sans-serif;
+    background-color: #fbf5dc;
 }
+
+/*========================================================================*/
+/* PAGE HEADER - JUMBOTRON */
+/*========================================================================*/
 .jumbotron {
     background-color: #00aa93;
     border-radius: 0px;
@@ -20,13 +28,18 @@ body {
     color: #e4f9c1;
     font-size: 40px;
 }
-.container { /* hides the ',' that appears between two cards with the same employee role */
-    color: white;
+
+/*========================================================================*/
+/* MAIN SECTION */
+/*========================================================================*/
+/* hides the ',' that appears between two cards with the same employee role */
+.main-section { 
+    color: #fbf5dc;
     font-size: 1px;
 }
 .card {
     margin: 10px;
-    width: 100%;
+    width: 60%;
     border-color: #003136;
     font-size: 17px;
 }
@@ -60,6 +73,20 @@ a {
     color: #00aa93;
 }
 a:hover {
-    color: #e4f9c1;
+    color: #dfcc7c;
     text-decoration: none;
+}
+
+/*========================================================================*/
+/* PAGE FOOTER */
+/*========================================================================*/
+.page-footer {
+    background-color: #00aa93;
+}
+.footer-copyright {
+    color: #003136;
+}
+.footer-owner {
+    color: #e4f9c1;
+    font-weight: bold;
 }

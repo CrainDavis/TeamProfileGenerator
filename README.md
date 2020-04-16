@@ -48,9 +48,17 @@ __step 3:__ When the user finishes answering all of the prompts in the terminal,
 * In the browser, the HTML will look something like this:
 ![generated team profile](/images/app-image.png)
 
+__step 4:__ In the newly-generated `team.html` file, replace the placeholders with the team/company specific information
+
+![company name & slogan](/images/page-header.png)
+
+![footer copyright](/images/page-footer.png)
+
 ---
 
 ## Demonstration:
+Follow this link to view a demonstration of this application:
+[App Demonstration](https://drive.google.com/file/d/1vQpDknigRXMfOTabRuLWVGTo0at9JQA4/view?usp=sharing)
 
 ---
 
