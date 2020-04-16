@@ -4,13 +4,14 @@
 ---
 
 ## Description:
-description
+This is a Command-Line Interface (CLI) application that allows the user to easily create a team profile HTML page just by answering questions about each member of the team. The Team Profile Generator employs Object-Oriented Programming (OOP) to generate profiles for three employee roles: the Manager, the Engineer(s), and the Intern(s).
 
 ---
 
 ## Table of Contents:
 * [Installation](#installation)
 * [Usage](#usage)
+* [Demonstration](#demonstration)
 * [License](#license)
 * [Contributing](#contributing)
 * [Resources](#resources)
@@ -20,10 +21,36 @@ description
 ---
 
 ## Installation:
+__step 1:__ Clone the repository to your local device by inputting the following command in your terminal:
+```
+git clone https://github.com/CrainDavis/TeamProfileGenerator.git
+```
+__step 2:__ Install the necessary npm packages by typing in the following command in the terminal:
+```
+npm install
+```
 
 ---
 
 ## Usage:
+__step 1:__ In the terminal, invoke the application with the following command:
+```
+node app.js
+```
+__step 2:__ Answer each of the prompts for information about the Manager, Engineer(s), and Intern(s). Each of these roles will require different (role-specific) information, as seen below:
+* __Manager__ will require: name, ID, email address, and office number
+* __Engineer(s)__ will require: name, ID, email address, and GitHub username
+* __Intern(s)__ will require: name, ID, email address, and the name of their school 
+* _note:_ This application allows for the user to create a profile for _one_ manager and any number of engineers/interns.
+
+__step 3:__ When the user finishes answering all of the prompts in the terminal, the HTML file will be generated.
+* The HTML file, called `team.html` will be generated inside the `output` directory inside this repository.
+* In the browser, the HTML will look something like this:
+![generated team profile](/images/app-image.png)
+
+---
+
+## Demonstration:
 
 ---
 
@@ -153,6 +180,10 @@ https://www.contributor-covenant.org/translations.
 ---
 
 ## Resources:
+* [npm.js packages](https://www.npmjs.com/)
+  * [FileSystem (fs)](https://www.npmjs.com/package/fs)
+  * [inquirer](https://www.npmjs.com/package/inquirer)
+  * [jest](https://www.npmjs.com/package/jest)
 
 ---
 
