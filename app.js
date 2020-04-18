@@ -19,6 +19,19 @@ let engineer = {}; // object to hold each created engineer
 let intern = {}; // object to hold each created intern
 
 // ===============================================================================
+// PROMPT RESPONSE VALIDATION:
+// ===============================================================================
+// prevents user from moving on until something is input
+function validateInput(input) {
+    return input !== '';
+}
+// only allows the user to input a number (no letters/special characters)
+function validateNumber(number) {
+    var reg = /^\d+$/;
+    return reg.test(number) || "enter a NUMBER";
+}
+
+// ===============================================================================
 // PROMPT FUNCTIONS FOR 3 EMPLOYEE ROLES (manager, engineer, intern):
 // ===============================================================================
 function getManagerInfo() {
@@ -26,22 +39,26 @@ function getManagerInfo() {
         {
             type: "input",
             name: "name",
-            message: "enter the manager's NAME"
+            message: "enter the manager's NAME",
+            validate: validateInput
         },
         {
             type: "input",
             name: "id",
-            message: "enter the manager's ID NUMBER"
+            message: "enter the manager's ID NUMBER",
+            validate: validateNumber
         },
         {
             type: "input",
             name: "email",
-            message: "enter the manager's EMAIL ADDRESS"
+            message: "enter the manager's EMAIL ADDRESS",
+            validate: validateInput
         },
         {
             type: "input",
             name: "officeNumber",
-            message: "enter the manager's OFFICE NUMBER"
+            message: "enter the manager's OFFICE NUMBER",
+            validate: validateInput, validateNumber
         },
         {
             type: "confirm",
@@ -66,22 +83,26 @@ function getEngineerInfo() {
         {
             type: "input",
             name: "name",
-            message: "enter the engineer's NAME"
+            message: "enter the engineer's NAME",
+            validate: validateInput
         },
         {
             type: "input",
             name: "id",
-            message: "enter the engineer's ID NUMBER"
+            message: "enter the engineer's ID NUMBER",
+            validate: validateNumber
         },
         {
             type: "input",
             name: "email",
-            message: "enter the engineer's EMAIL ADDRESS"
+            message: "enter the engineer's EMAIL ADDRESS",
+            validate: validateInput
         },
         {
             type: "input",
             name: "github",
-            message: "enter the engineer's GITHUB USERNAME"
+            message: "enter the engineer's GITHUB USERNAME",
+            validate: validateInput
         },
         {
             type: "confirm",
@@ -106,22 +127,26 @@ function getInternInfo() {
         {
             type: "input",
             name: "name",
-            message: "enter the intern's NAME"
+            message: "enter the intern's NAME",
+            validate: validateInput
         },
         {
             type: "input",
             name: "id",
-            message: "enter the intern's ID NUMBER"
+            message: "enter the intern's ID NUMBER",
+            validate: validateNumber
         },
         {
             type: "input",
             name: "email",
-            message: "enter the intern's EMAIL ADDRESS"
+            message: "enter the intern's EMAIL ADDRESS",
+            validate: validateInput
         },
         {
             type: "input",
             name: "school",
-            message: "enter the intern's SCHOOL"
+            message: "enter the intern's SCHOOL",
+            validate: validateInput
         },
         {
             type: "confirm",
@@ -197,7 +222,7 @@ async function generateHtmlPage() {
         // write file ("team.html" will be generated inside the 'output' directory)
         await fs.writeFile(outputPath, renderedTeam, "utf8", (err) => {
             if (err) throw err;
-            console.log("SUCCESS! your team has been generated");
+            console.log("SUCCESS! Your team profiles have been generated.\nGo check the 'output' directory for the 'team.html' file.");
         });
         
     } catch (err) {
