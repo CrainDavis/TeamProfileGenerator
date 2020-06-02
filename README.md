@@ -15,7 +15,6 @@ This is a Command-Line Interface (CLI) application that allows the user to easil
 * [License](#license)
 * [Contributing](#contributing)
 * [Resources](#resources)
-* [Tests](#tests)
 * [Questions](#questions)
 
 ---
@@ -192,10 +191,6 @@ https://www.contributor-covenant.org/translations.
   * [FileSystem (fs)](https://www.npmjs.com/package/fs)
   * [inquirer](https://www.npmjs.com/package/inquirer)
   * [jest](https://www.npmjs.com/package/jest)
-
----
-
-## Tests:
 
 ---
 
